@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">PORTAFOLIO</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">ASIGNATURA</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">PROFESOR</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.png" alt="">
+            </div>
+            <h1>Mario Espejo Espinoza</h1>
+            <h2>Estudiante de Ingenieria de Sistemas y Computación</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-solid fa-rss"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Mario Espejo Espinoza.</span>Soy estudiante de
+                Ingenieria de Sistemas y
+                Computación voy cursando el VI cilo de la.
+                Me considero una
+                persona muy alegre con
+                mucha energía,
+                responsable y puntual.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños:</strong>
+                            16 - 12 - 2003
+                        </li>
+                        <li>
+                            <strong>Celular:</strong>
+                            918-555-751
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            marioesespinoza16.12@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Av Palian, Calle alamos - 103
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>ESTUDIANTE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        
+                        <div class="interes">
+                            <i class="fa-solid fa-futbol"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                <a href="pdf/CV (1).pdf" download="Mario_Espejo_CV.pdf">
+                  Descargar CV <i class="fa-solid fa-download"></i>
+                </a>
+                <span class="overlay"></span>
+              </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Asignatura</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Base de Datos</h3>
+                    <div class="skill">
+                        <div class="content">
+                            <img src="img/upla.jpg" alt="Descripción de la imagen" class="imagen-derecha">
+                            
+                        </div>
+                        <span>Una base de datos es una herramienta diseñada para almacenar, organizar y gestionar información de forma estructurada y segura. Aquí tienes una descripción más completa pero compacta:
+
+                            Estructura organizada: Los datos se almacenan en tablas, que se componen de filas (registros) y columnas (campos). Esto facilita localizar y entender cada fragmento de información, como números, texto, fechas, o combinaciones de estos.
+                            
+                            Búsqueda eficiente: Utiliza índices y algoritmos para hacer consultas rápidas, optimizando el acceso y la manipulación de grandes volúmenes de datos sin comprometer el rendimiento.
+                            
+                            Relaciones entre datos: En bases de datos relacionales, las tablas están conectadas entre sí mediante claves primarias y foráneas, permitiendo representar relaciones lógicas, como las de clientes y sus pedidos, o productos y proveedores.
+                            
+                            Persistencia garantizada: Los datos permanecen almacenados incluso si el sistema se apaga o reinicia, asegurando que la información esté disponible en todo momento.
+                            
+                            Seguridad y control: Implementa medidas como autenticación, autorización y cifrado para proteger los datos de accesos no autorizados y garantizar que cada usuario tenga los permisos adecuados para ver o modificar la información.
+                        </span>
+                            </div>
+                        
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PROFESOR -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>PROFESOR</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="content">
+                    <img src="img/profesor.jpg" alt="Descripción de la imagen" class="imagen-alt">
+                    
+                </div>
+                <span>Raúl Enrique Fernández Bejarano
+
+                    Jefe de Informática del IESTP "Andrés A. Cáceres D"
+                    Especialista en el curso de Java.
+                    Base de Datos 2, un curso avanzado que profundiza en el diseño, gestión y optimización de bases de datos. Este curso está diseñado para ofrecer un conocimiento profundo de las técnicas avanzadas en bases de datos, incluyendo: Diseño avanzado de esquemas de base de datos. Optimización de consultas y rendimiento. Administración y seguridad de bases de datos. Uso de procedimientos almacenados y triggers. Introducción a bases de datos distribuidas y NoSQL
+                </span>
+                    </div>
+                
+        </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/basedatos.png" alt="">
+                    <div class="overlay">
+                        <h3>Semana 1</h3>
+                        <a href="pdf/ACTIVIDAD 1.pdf" target="_blank" >TAREA1</a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/basedatos.png" alt="">
+                    <div class="overlay">
+                        <h3>Semana 2</h3>
+                        <a href="pdf/ACTIVIDAD 2.pdf target="_blank" >TAREA2</a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/basedatos.png" alt="">
+                    <div class="overlay">
+                        <h3>Semana 3</h3>
+                        <a href="pdf/Semana3.pdf" target="_blank" >TAREA3</a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/basedatos.png" alt="">
+                    <div class="overlay">
+                        <h3>Semana 4</h3>
+                        <a href="pdf/SEMANA4.pdf"_blank" >TAREA4</a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/basedatos.png" alt="">
+                    <div class="overlay">
+                        <h3>Semana 5</h3>
+                        <a href="pdf/Semana5.pdf" target="_blank" >TAREA5</a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/basedatos.png" alt="">
+                    <div class="overlay">
+                        <h3>Semana 6</h3>
+                        <a href="pdf/Semana6.pdf" target="_blank" >TAREA6</a>
+                    </div>
+                </div>
+                
+                <div class="proyecto">
+                    <img src="img/basedatos.png" alt="">
+                    <div class="overlay">
+                        <h3>Semana 8</h3>
+                        <a href="pdf/MARIOESPEJO.pdf" target="_blank" >EXAMEN PARCIAL</a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/basedatos.png" alt="">
+                    <div class="overlay">
+                        <h3>Semana 9</h3>
+                        <a href="pdf/CREACIONDEUSUARIO.pdf" target="_blank" >CREACION DE USUARIO</a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/basedatos.png" alt="">
+                    <div class="overlay">
+                        <h3>Semana 10</h3>
+                        <a href="pdf/ENCRIPTADOSQL.pdf" target="_blank" >ENCRIPTADO SQL SERVER</a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/basedatos.png" alt="">
+                    <div class="overlay">
+                        <h3>Semana 11</h3>
+                        <a href="pdf/NORMASSQL.pdf" target="_blank" >NORMAS</a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/basedatos.png" alt="">
+                    <div class="overlay">
+                        <h3>Semana 12</h3>
+                        <a href="pdf/Datos.pdf" target="_blank" >100 DATOS SQL SERVER</a>
+                    </div>
+                </div>
+                
+                <div class="proyecto">
+                    <img src="img/basedatos.png" alt="">
+                    <div class="overlay">
+                        <h3>Semana 14</h3>
+                        <a href="pdf/ResumenEspejoEspinoza.pdf" target="_blank" >RESUMEN</a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/basedatos.png" alt="">
+                    <div class="overlay">
+                        <h3>Semana 15</h3>
+                        <a href="semana15.html" target="_blank" >PRESENTACION DE LA PAGINA</a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/basedatos.png" alt="">
+                    <div class="overlay">
+                        <h3>Semana 16</h3>
+                        <a href="semana16.html" target="_blank" >EXAMEN FINAL</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Educación Superior</h4>
+                        <span class="casa">Universidad Peruana los Andes</span>
+                        <span class="fecha">Ingeniería de Sistemas y Computación 2022 - ACTUAL</span>
+                        <p>Actualmente voy cursando el VI ciclo de la Carrera de Ingenieria de Sistemas y Computación, durante el desarrollo de mis estudios aprendí muchos programas de programación
+                            He trabajado en proyectos de programación, realice proyectos sociales acerca de mi carrera.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Educación Secundaria</h4>
+                        <span class="casa">Colegio San Carlos La Merced - Chanchamayo</span>
+                        <span class="fecha">2017 - 2021</span>
+                        <p>Curso la Educación Secundaria en el colegio Privado San Carlos en la ciudad de La Merced Chanchamayo, lo cual tuve mucha orientación con mis profesores, muchas charlas
+                            de lo importante que es estudiar en una Universidad, entre otras cosas.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Educación Primaria</h4>
+                        <span class="casa">Virgen Maria Admirable</span>
+                        <span class="fecha">2009 - 2014</span>
+                        <p>Curse la Educación Primaria en la escuelita Virgen Maria Admirable N°31542 ubicado en Huancayo, Durante mi educación primaria, desarrollé una sólida base académica, participando activamente en actividades extracurriculares como deportes y otras actividades.
+                             Aprendí a trabajar en equipo y a afrontar desafíos desde una edad temprana, lo cual influyó en mi enfoque.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Servicio de Producción</h4>
+                        <span class="casa">Pizza Hut - Huancayo OP</span>
+                        <span class="fecha">2024 (Enero) - Actualmente</span>
+                        <p>En mi puesto actual en el servicio de producción de Pizza Hut, soy responsable de asegurar la calidad y eficiencia en la preparación de los productos
+                            . Trabajo en equipo para garantizar que se cumplan los estándares de tiempo y calidad en cada pedido, manteniendo un ambiente de trabajo organizado y seguro. 
+                           
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Ayudante General</h4>
+                        <span class="casa">Ferreteria MERCANTIL - La Merced Chanchamayo</span>
+                        <span class="fecha">2022 (Enero) - 2022 (Julio)</span>
+                        <p>En este puesto, fui responsable de la atención al cliente, brindando un servicio amable y eficiente para satisfacer las necesidades de los clientes.
+                             Me encargué de la venta y reposición de productos, asegurando que las estanterías estuvieran siempre abastecidas y gestion de inventario.
+                              
+
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Mozo</h4>
+                        <span class="casa">Cafeteria "Tinto - Cafe"</span>
+                        <span class="fecha">2021 (Febrero) - 2021(Octubre)</span>
+                        <p>En este rol, brindé atención y servicio de calidad a los clientes, asegurando una experiencia satisfactoria durante su visita. 
+                            Me encargué de la limpieza y el mantenimiento de las áreas de trabajo para garantizar un ambiente.
+                             Además, presté apoyo en la barra, colaborando en la preparación y entrega de bebidas y otros productos.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
